@@ -26,8 +26,7 @@ export default function Home() {
         <p className="text-lg mb-4">learning by doing. doing something new everyday</p>
         <ul className="list-disc list-inside space-y-3 text-base mb-2">
           <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
-          <li>some of my fav people include: steve jobs, virgil abloh, walt disney, martin margiela, quentin tarantino, dieter rams, marco pierre white and masayoshi son.</li>
-          <li className="mt-0">took 18 months leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI drafting copilot used by 15+ law firms; bootstrapped to mid–5 figs ARR</li>
+          <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI drafting copilot used by 15+ law firms; bootstrapped to mid–5 figs ARR</li>
           <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, advised by Roland Vogl; presented research and prototypes on legal decision modeling with LLMs</li>
           <li>
             founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
@@ -43,7 +42,8 @@ export default function Home() {
               </ul>
             </details>
           </li>
-          <li>prev. founded <a href="https://www.notion.so/augierart/Augier-f320ff83c6eb4646994d66a854185364?source=copy_link" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">art tech startup</a> backed by Sotheby’s execs, built 3D sites for <a href="https://www.muse.place/gallardo" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">A$AP Rocky’s creative director</a>, founding designer at <a href="https://vienna.earth/meta" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Vienna Earth</a> (now Aqua Voice, YC W24)</li>
+          <li>prev. founded <a href="https://www.notion.so/augierart/Augier-f320ff83c6eb4646994d66a854185364?source=copy_link" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">art tech startup</a> backed by Sotheby's execs, built 3D sites for <a href="https://www.muse.place/gallardo" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">A$AP Rocky's creative director</a>, founding designer at <a href="https://vienna.earth/meta" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Vienna Earth</a> (now Aqua Voice, YC W24)</li>
+          <li>some of my fav people include: steve jobs, virgil abloh, walt disney, martin margiela, quentin tarantino, dieter rams, marco pierre white and masayoshi son.</li>
         </ul>
         {/* Random Projects Dropdown */}
         <details className="ml-4 mt-0">
