@@ -72,7 +72,7 @@ export default function Home() {
           </ul>
         </details>
         <div className="mt-4 text-base text-gray-700">
-          some of my fav people include: steve jobs, virgil abloh, walt disney, martin margiela, quentin tarantino, dieter rams, marco pierre white and masayoshi son.
+          some of my fav people include: steve jobs, kanye west (pre 2022), martin margiela, quentin tarantino, dieter rams, marco pierre white, slim aarons and masayoshi son.
         </div>
       </main>
     </div>
