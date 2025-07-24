@@ -2,9 +2,9 @@
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex bg-white text-black font-sans">
+    <div className="w-full min-h-screen flex flex-col md:flex-row bg-white text-black font-sans">
       {/* Sidebar Navigation */}
-      <aside className="flex flex-col w-full md:w-64 min-h-screen px-4 md:px-8 py-6 md:py-12 bg-white text-sm border-b md:border-b-0 md:border-r border-gray-200 sticky top-0 h-auto md:h-screen">
+      <aside className="flex flex-col w-full md:w-64 min-h-auto md:min-h-screen px-4 md:px-8 py-6 md:py-12 bg-white text-sm border-b md:border-b-0 md:border-r border-gray-200 sticky top-0 h-auto md:h-screen z-10">
         <nav className="flex flex-col gap-2 mb-10">
           <a href="#" className="font-medium text-black hover:underline">Home</a>
           <a href="/writing" className="text-gray-500 hover:underline">Writing</a>
@@ -26,8 +26,8 @@ export default function Home() {
         <p className="text-lg mb-4">learning by doing. doing something new everyday</p>
         <ul className="list-disc list-inside space-y-3 text-base mb-2">
           <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
-          <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI drafting copilot used by 15+ law firms; bootstrapped</li>
-          <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, advised by Roland Vogl; presented research and prototypes on legal decision modeling with LLMs</li>
+          <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI drafting copilot used by 15+ law firms; bootstrapped to mid 5 figs ARR</li>
+          <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, presented research and prototypes using LLMs to automate document preparation and litigation finance decision modeling</li>
           <li>
             founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
             <details className="ml-4 mt-2">
