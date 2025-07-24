@@ -1,10 +1,35 @@
 "use client";
 
+import { useState } from "react";
+
 export default function Home() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className="w-full min-h-screen flex flex-col md:flex-row bg-white text-black font-sans">
+      {/* Hamburger Button for Mobile */}
+      <button
+        className="md:hidden fixed top-4 left-4 z-30 p-2 bg-white border border-gray-300 rounded shadow"
+        aria-label="Open sidebar navigation"
+        onClick={() => setSidebarOpen((open) => !open)}
+      >
+        <span className="block w-6 h-0.5 bg-black mb-1"></span>
+        <span className="block w-6 h-0.5 bg-black mb-1"></span>
+        <span className="block w-6 h-0.5 bg-black"></span>
+      </button>
       {/* Sidebar Navigation */}
-      <aside className="flex flex-col w-full md:w-64 min-h-auto md:min-h-screen px-4 md:px-8 py-6 md:py-12 bg-white text-sm border-b md:border-b-0 md:border-r border-gray-200 sticky top-0 h-auto md:h-screen z-10">
+      <aside
+        className={`flex flex-col w-64 min-h-auto md:min-h-screen px-4 md:px-8 py-6 md:py-12 bg-white text-sm border-b md:border-b-0 md:border-r border-gray-200 h-auto md:h-screen z-20 transition-transform duration-300 md:translate-x-0 fixed md:static top-0 left-0
+        ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:flex md:w-64 md:translate-x-0`}
+        style={{ maxWidth: "16rem" }}
+      >
+        {/* Close button for mobile */}
+        <button
+          className="md:hidden self-end mb-4 p-2 text-gray-500"
+          aria-label="Close sidebar navigation"
+          onClick={() => setSidebarOpen(false)}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+        </button>
         <nav className="flex flex-col gap-2 mb-10">
           <a href="#" className="font-medium text-black hover:underline">Home</a>
           <a href="/writing" className="text-gray-500 hover:underline">Writing</a>
