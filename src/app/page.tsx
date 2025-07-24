@@ -97,7 +97,7 @@ export default function Home() {
           </ul>
         </details>
         <div className="mt-4 text-gray-700">
-          people I admire: steve jobs, kanye west (pre 2022), martin margiela, quentin tarantino, dieter rams, marco pierre white, zlatan, john mcafee, zuck and masayoshi son.
+          people I admire: steve jobs, kanye west (pre 2022), martin margiela, quentin tarantino, dieter rams, marco pierre white, zlatan, john mcafee, zuck, parker conrad and masayoshi son.
         </div>
       </main>
     </div>
