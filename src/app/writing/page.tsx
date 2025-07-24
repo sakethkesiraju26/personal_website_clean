@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 const essays = [
   {
     id: "customer-experience",
@@ -66,47 +68,110 @@ const essays = [
 ];
 
 export default function Writing() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div className="w-full min-h-screen flex bg-white/80 text-black font-sans backdrop-blur-xl">
-      {/* Sidebar Navigation */}
-      <aside className="hidden md:flex flex-col w-64 min-h-screen px-8 py-12 bg-white text-sm border-r border-gray-200 sticky top-0 h-screen">
-        <a href="/" className="mb-8 text-sm font-medium text-gray-700 hover:text-black hover:underline transition-colors">
-          ← Back to Home
-        </a>
-        <div className="font-bold mb-8 tracking-wide text-xs uppercase text-gray-700">Essays</div>
-        <nav className="flex flex-col gap-2">
-          {essays.map((essay) => (
-            <a
-              key={essay.id}
-              href={`#${essay.id}`}
-              className="text-sm font-medium text-gray-700 hover:text-black hover:underline transition-colors"
-            >
-              {essay.title}
-            </a>
-          ))}
-        </nav>
-      </aside>
-      {/* Main Content */}
-      <main className="flex-1 w-full max-w-3xl mx-auto px-12 py-20 md:ml-64 bg-white">
-        {essays.map((essay) => (
-          <section
-            key={essay.id}
-            id={essay.id}
-            className="mb-24 border-0 p-0"
+    <>
+      <div className="w-full min-h-screen flex flex-col md:flex-row bg-white/80 text-black font-sans backdrop-blur-xl">
+        {/* Hamburger Button for Mobile */}
+        <button
+          className="md:hidden fixed top-4 left-4 z-30 p-2 bg-white border border-gray-300 rounded shadow"
+          aria-label="Open sidebar navigation"
+          onClick={() => setSidebarOpen((open) => !open)}
+        >
+          <span className="block w-6 h-0.5 bg-black mb-1"></span>
+          <span className="block w-6 h-0.5 bg-black mb-1"></span>
+          <span className="block w-6 h-0.5 bg-black"></span>
+        </button>
+        {/* Main Navigation Sidebar */}
+        <aside
+          className={`flex flex-col w-64 min-h-auto md:min-h-screen px-4 md:px-8 py-6 md:py-12 bg-white text-sm border-b md:border-b-0 md:border-r border-gray-200 h-auto md:h-screen z-20 transition-transform duration-300 md:translate-x-0 fixed md:static top-0 left-0
+          ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:flex md:w-64 md:translate-x-0`}
+          style={{ maxWidth: "16rem" }}
+        >
+          {/* Close button for mobile */}
+          <button
+            className="md:hidden self-end mb-4 p-2 text-gray-500"
+            aria-label="Close sidebar navigation"
+            onClick={() => setSidebarOpen(false)}
           >
-            <h2
-              className="font-bold text-4xl mb-10 font-serif text-black/90 tracking-tight leading-tight"
-              style={{ fontFamily: 'var(--font-playfair), serif' }}
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
+          <nav className="flex flex-col gap-2 mb-10">
+            <a href="/" className="font-medium text-black hover:underline">Home</a>
+            <a href="/writing" className="text-gray-500 hover:underline">Writing</a>
+            <a href="https://augierart.notion.site/Saketh-Kesiraju-1f1a07090435455b9b0e8e9f58b1ee8e?source=copy_link" className="text-gray-500 hover:underline">Design Portfolio</a>
+          </nav>
+          {/* Essay Navigation (desktop only) */}
+          <div className="hidden md:block">
+            <div className="font-bold mb-8 tracking-wide text-xs uppercase text-gray-700">Essays</div>
+            <nav className="flex flex-col gap-2">
+              {essays.map((essay) => (
+                <a
+                  key={essay.id}
+                  href={`#${essay.id}`}
+                  className="text-sm font-medium text-gray-700 hover:text-black hover:underline transition-colors"
+                >
+                  {essay.title}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+        {/* Main Content */}
+        <main className="flex-1 w-full max-w-3xl mx-auto px-6 py-16 text-left text-base">
+          {/* Essay Navigation (mobile only) */}
+          <div className="block md:hidden mb-8">
+            <div className="font-bold mb-4 tracking-wide text-xs uppercase text-gray-700">Essays</div>
+            <nav className="flex flex-col gap-2">
+              {essays.map((essay) => (
+                <a
+                  key={essay.id}
+                  href={`#${essay.id}`}
+                  className="text-sm font-medium text-gray-700 hover:text-black hover:underline transition-colors"
+                >
+                  {essay.title}
+                </a>
+              ))}
+            </nav>
+          </div>
+          {essays.map((essay) => (
+            <section
+              key={essay.id}
+              id={essay.id}
+              className="mb-24 border-0 p-0"
             >
-              {essay.title}
-            </h2>
-            <div className="mb-6 text-sm italic text-gray-500">{essay.date}</div>
-            <div className="prose prose-lg max-w-none text-gray-900 leading-relaxed bg-transparent p-0">
-              {essay.content}
-            </div>
-          </section>
-        ))}
-      </main>
-    </div>
+              <h2
+                className="font-bold text-4xl mb-10 font-serif text-black/90 tracking-tight leading-tight"
+                style={{ fontFamily: 'var(--font-playfair), serif' }}
+              >
+                {essay.title}
+              </h2>
+              <div className="mb-6 text-sm italic text-gray-500">{essay.date}</div>
+              <div className="prose prose-lg max-w-none text-gray-900 leading-relaxed bg-transparent p-0">
+                {essay.content}
+              </div>
+            </section>
+          ))}
+        </main>
+      </div>
+      {/* Social/Contact Links at Bottom */}
+      <footer className="w-full px-6 py-8 border-t border-gray-200 bg-white text-xs flex flex-col items-center gap-2 mt-2">
+        <div className="font-bold mb-2 text-xs uppercase text-gray-700">Reach Me On</div>
+        <nav className="flex flex-row gap-6 items-center">
+          <a href="mailto:saketh@nyu.edu" className="text-gray-500 hover:text-black" aria-label="Email">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 4h16v16H4V4zm0 0l8 8 8-8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </a>
+          <a href="https://www.instagram.com/jahsaonketh" className="text-gray-500 hover:text-black" aria-label="Instagram">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" strokeWidth="2"/><circle cx="12" cy="12" r="5" strokeWidth="2"/><circle cx="17" cy="7" r="1.5"/></svg>
+          </a>
+          <a href="https://github.com/sakethkesiraju26" className="text-gray-500 hover:text-black" aria-label="GitHub">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/saketh-kesiraju-0a945617b/" className="text-gray-500 hover:text-black" aria-label="LinkedIn">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" strokeWidth="2"/><path d="M7 10v7M7 7v.01M12 10v7m0-7c0-1.1.9-2 2-2s2 .9 2 2v7" strokeWidth="2" strokeLinecap="round"/></svg>
+          </a>
+        </nav>
+      </footer>
+    </>
   );
 } 
