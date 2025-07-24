@@ -52,7 +52,7 @@ export default function Home() {
         <ul className="list-disc list-inside space-y-3 text-base mb-2">
           <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
           <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI Paralegal used by 15+ law firms; bootstrapped to mid 5 figs ARR</li>
-          <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, presented research and prototypes using LLMs to automate document preparation and litigation finance decision modeling</li>
+          <li>Visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, built and presented LLM-based applications to automate complex document preparation (over 100 pages) and to predict litigation outcomes.</li>
           <li>
             founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
             <details className="ml-4 mt-2">
