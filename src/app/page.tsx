@@ -26,19 +26,19 @@ export default function Home() {
         <p className="text-lg mb-4">learning by doing. doing something new everyday</p>
         <ul className="list-disc list-inside space-y-3 text-base mb-2">
           <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
-          <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI drafting copilot used by 15+ law firms; bootstrapped to mid 5 figs ARR</li>
+          <li className="mt-0">took leave from nyu and founded <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> and <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a> → started as flat-fee fund formation service, pivoted to AI Paralegal used by 15+ law firms; bootstrapped to mid 5 figs ARR</li>
           <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, presented research and prototypes using LLMs to automate document preparation and litigation finance decision modeling</li>
           <li>
             founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
             <details className="ml-4 mt-2">
               <summary className="cursor-pointer font-semibold text-gray-800">portfolio companies</summary>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li><a href="https://www.flite.city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">flite.city</a> (backed by Jason Calcanis)</li>
-                <li><a href="https://www.synaptrix-labs.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">synaptrix-labs.com</a> (backed by Underdog Labs and top neurotech angels)</li>
-                <li><a href="https://blockhouse.app/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">blockhouse.app</a> (backed by Soma Capital, Antler, and top operators)</li>
-                <li><a href="https://www.useterra.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">useterra.com</a> (backed by Y Combinator, Floodgate, and Kyber Knight)</li>
+                <li><a href="https://www.flite.city/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Flite</a> (backed by Jason Calcanis)</li>
+                <li><a href="https://www.synaptrix-labs.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Synaptrix Labs</a> (backed by Underdog Labs and top neurotech angels)</li>
+                <li><a href="https://blockhouse.app/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Blockhouse</a> (backed by Soma Capital, Antler, and top operators)</li>
+                <li><a href="https://www.useterra.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">Terra</a> (backed by Y Combinator, Floodgate, and Kyber Knight)</li>
                 <li><span className="text-gray-700">PE due diligence software (founders now work at top banks)</span></li>
-                <li><a href="https://www.playslap.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">playslap.com</a> (backed by Princeton Alumni Angels, Broad Street Angels)</li>
+                <li><a href="https://www.playslap.com/irl" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">IRL</a> (backed by Princeton Alumni Angels, Broad Street Angels)</li>
               </ul>
             </details>
           </li>
