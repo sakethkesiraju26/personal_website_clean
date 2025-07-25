@@ -68,10 +68,10 @@ export default function Home() {
             <summary className="cursor-pointer font-semibold text-gray-800">projects</summary>
             <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
               <li>
-                <a href="https://youtu.be/CbYAkPnKUs8?si=BCjb5KuyhWOim2dd" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">sec-gpt</a>
+                <a href="https://www.harveylegal.ai/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">legal super app</a>
               </li>
               <li>
-                <a href="https://www.litigationprediction.com/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">predict contract breach outcomes</a>
+                <a href="https://youtu.be/CbYAkPnKUs8?si=BCjb5KuyhWOim2dd" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">sec-gpt</a>
               </li>
               <li>
                 <a href="https://youtu.be/gftXzEZ93j4" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">blockchain-based art marketplace</a>
