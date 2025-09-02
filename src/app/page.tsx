@@ -34,6 +34,7 @@ export default function Home() {
           <nav className="flex flex-col gap-2 mb-10">
             <a href="#" className="font-medium text-black hover:underline">Home</a>
             <a href="/writing" className="text-gray-500 hover:underline">Writing</a>
+            <a href="/photography" className="text-gray-500 hover:underline">Photography</a>
             <a href="https://augierart.notion.site/Saketh-Kesiraju-1f1a07090435455b9b0e8e9f58b1ee8e?source=copy_link" className="text-gray-500 hover:underline">Design Portfolio</a>
           </nav>
         </aside>
@@ -91,7 +92,7 @@ export default function Home() {
             </ul>
           </details>
           <div className="mt-4 text-gray-700">
-            people I admire: steve jobs, kanye west (pre 2022), martin margiela, quentin tarantino, dieter rams, marco pierre white, zlatan, john mcafee, zuck, parker conrad and masayoshi son.
+            people I admire: steve jobs, kanye west (pre 2022), martin margiela, quentin tarantino, dieter rams, marco pierre white, zlatan, zuck, parker conrad, elon musk and masayoshi son.
           </div>
         </main>
       </div>
