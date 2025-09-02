@@ -34,7 +34,6 @@ export default function Home() {
           <nav className="flex flex-col gap-2 mb-10">
             <a href="#" className="font-medium text-black hover:underline">Home</a>
             <a href="/writing" className="text-gray-500 hover:underline">Writing</a>
-            <a href="/photography" className="text-gray-500 hover:underline">Photography</a>
             <a href="https://augierart.notion.site/Saketh-Kesiraju-1f1a07090435455b9b0e8e9f58b1ee8e?source=copy_link" className="text-gray-500 hover:underline">Design Portfolio</a>
           </nav>
         </aside>
@@ -46,8 +45,8 @@ export default function Home() {
           <p className="mb-4">learning by doing. doing something new everyday</p>
           <ul className="list-disc list-inside space-y-3 mb-2">
             <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
-            <li className="mt-0">took leave from nyu and started a tech-enabled fund formation service and ended up building <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a>, then <a href="https://www.carbonpaper.ai" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">CarbonPaper</a>, AI-powered document editor for lawyers that replaces Microsoft Word; bootstrapped to mid 5 figs ARR</li>
-            <li>visiting researcher at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, built and presented LLM-based applications to automate complex document preparation (LPAs & PPMs) and to predict litigation outcomes.</li>
+            <li>Currently exploring new frontiers at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, automating complex legal docs, predicting litigation with LLMs, and converting insurance policy docs to code.</li>
+            <li className="mt-0">Took gap from school to build <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> — AI for fund formation serving 17 firms, powered $30M fund launch at 90% cost savings</li>
             <li>
               founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
               <details className="ml-4 mt-2">
