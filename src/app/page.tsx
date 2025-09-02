@@ -44,9 +44,9 @@ export default function Home() {
           </h1>
           <p className="mb-4">learning by doing. doing something new everyday</p>
           <ul className="list-disc list-inside space-y-3 mb-2">
-            <li>senior at nyu. hobbies: photojournalism and playing poker.</li>
-            <li>Currently exploring new frontiers at <a href="https://www.youtube.com/watch?v=qdljfmv_tcw&t=1687s" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, automating complex legal docs, predicting litigation with LLMs, and converting insurance policy docs to code.</li>
-            <li className="mt-0">Took gap from school to build <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> — AI for fund formation serving 17 firms, powered $30M fund launch at 90% cost savings</li>
+            <li>senior at nyu. hobbies: photojournalism, playing poker, and fifa.</li>
+            <li>currently exploring new frontiers at <a href="https://law.stanford.edu/codex-the-stanford-center-for-legal-informatics/" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">Stanford CodeX</a>, automating complex legal docs, predicting litigation with LLMs, and converting insurance policy docs to code.</li>
+            <li className="mt-0">took gap from school to build <a href="https://www.tryswiftlaw.com" className="underline text-blue-700" target="_blank" rel="noopener noreferrer">SwiftLaw</a> — AI for fund formation serving 17 firms, powered $30M fund launch at 90% cost savings</li>
             <li>
               founded NYU EEG&apos;s Entrepreneurs in Residence program. helped the best NYU startups launch and fundraise with 10 weeks of programming from General Catalyst, a16z, and top operators in AI.
               <details className="ml-4 mt-2">
